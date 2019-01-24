@@ -18,13 +18,13 @@ var loader = new Load();
 
 loader.loadImgs(
   [
-    '/resource/images/bg1.jpg',
-    '/resource/images/bg2.jpg',
-    '/resource/images/bg3.jpg',
-    '/resource/images/bg4.jpg',
-    '/resource/images/bg5.jpg',
-    '/resource/images/bg6.jpg',
-    '/resource/images/bg7.jpg',
+    '../images/bg1.jpg',
+    '../images/bg2.jpg',
+    '../images/bg3.jpg',
+    '../images/bg4.jpg',
+    '../images/bg5.jpg',
+    '../images/bg6.jpg',
+    '../images/bg7.jpg',
     // '/resource/images/ewm.png',
     // '/resource/images/list-bg1.png',
     // '/resource/images/list-bg2.png',
@@ -38,8 +38,8 @@ loader.loadImgs(
     // '/resource/images/news-img1.png',
     // '/resource/images/news-img2.png',
     // '/resource/images/news-img3.png',
-    '/resource/images/production.jpg',
-    '/resource/images/test1.png'
+    '../images/production.jpg',
+    '../images/test1.png'
   ],
   function(percent) {
     var loadText = document.getElementById('load-text');
