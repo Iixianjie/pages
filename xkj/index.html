@@ -15,19 +15,184 @@
 			}
 
 		</script>
+		<link href="/resource/load.css" rel="stylesheet">
+		<script src="/resource/load.js"></script>
 		<script>
 			window.viewData = {
-				name: '123'
+				/* 导航信息 */
+				navlink: [{
+					label: '企业首页',
+					ename: 'Home',
+					link: '/xxx1.html'
+				}, {
+					label: '新闻资讯',
+					ename: 'News',
+					link: '/xxx2.html'
+				}, {
+					label: '产品中心',
+					ename: 'Product',
+					link: '/xxx3.html'
+				}, {
+					label: '关于我们',
+					ename: 'About',
+					link: '/xxx4.html'
+				}, {
+					label: '社区中心',
+					ename: 'Centre',
+					link: '/xxx5.html'
+				}, {
+					label: '联系我们',
+					ename: 'Contact',
+					link: '/xxx6.html'
+				}, ],
+				copyright: 'Copyright © 2016 xxx', // 页脚copyright
+				ewm: '/resource/images/ewm.png', // 二维码图片地址
+				page1: {
+					/* 主页的3段描述 */
+					descs: [
+						'行政效能提升 公共资源管理 房屋征收 水利水务 权力管理 精准扶贫',
+						'智慧交通软件 数据铁笼系统 农业追溯平台 下一代教育云体系',
+						'数博会 教育厅 交通厅 省电视台 共青团省委',
+					]
+				},
+				page2: {
+					list: [{
+						title: '集团官网站群设计开发',
+						desc: '集团官网专属的高端定制化服务解决方案，全面满足建设核心与运行管理,并提升集团品牌的有效传播',
+						more: '/more1.html', // 点击更多跳转的链接
+						img: '/resource/images/test1.png' // more下面的图片
+					}, {
+						title: '高端企业网站设计定制',
+						desc: '模板秀凭借多年的行业经验与专业团队让各知名企业。机构官网脱颖而出从满足预期到走向卓越。',
+						more: '/more2.html',
+						img: '/resource/images/test1.png'
+					}, {
+						title: 'HTML5响应式网站开发',
+						desc: 'HTML5+CSS3设计制作同时兼容手机、IPAD等触屏设备分辨率，达到最优访问效果，网站数据同步各终端。',
+						more: '/more3.html',
+						img: '/resource/images/test1.png'
+					}, {
+						title: '移动端手机网站与APP',
+						desc: '专注移动端手机网站设计、微网站开发、APP定制开发，创造有活力的品牌网站，提升用户体验和品牌价值感。',
+						more: '/more4.html',
+						img: '/resource/images/test1.png'
+					}, ]
+				},
+				page3: {
+					morelink: '/more5.html',
+					list: [{
+						title: '政务效能提升督查',
+						ename: 'efficacy',
+						link: '/more1.html', // 点击跳转的链接
+						img: '/resource/images/list-bg1.png' // 背景图
+					}, {
+						title: '土地征收补偿管控',
+						ename: 'collection',
+						link: '/more1.html',
+						img: '/resource/images/list-bg2.png'
+					}, {
+						title: '水利水务项目监理',
+						ename: 'Water',
+						link: '/more1.html',
+						img: '/resource/images/list-bg3.png'
+					}, {
+						title: '群团工作服务跟踪',
+						ename: 'group',
+						link: '/more1.html',
+						img: '/resource/images/list-bg4.png'
+					}, {
+						title: '农业追溯扶贫攻坚',
+						ename: 'Traceback',
+						link: '/more1.html',
+						img: '/resource/images/list-bg5.png'
+					}, ]
+				},
+				page4: {
+					morelink: '/more5.html',
+					lists: [{
+							img: '/resource/images/production.jpg',
+						},
+						// {  格式
+						//   img: 'xxx',
+						//   title: '123',
+						//   desc: 'xxxxxxxxxxxxxxxxxx',
+						//   link: '/more1.html'
+						// }
+					].concat(testData(50)) // 添加测试数据
+				},
+				page5: {
+					morelink: '/more5.html',
+					lists: [{
+							title: '星空间科技大咖对行业痛点的理性分析要做到那些方星空间',
+							desc: '这里是文章的摘要，简介部分这里是文章的摘要简介部分这里是文章的摘要简介部分这这里是文章的摘要，简介部分这里是文章的摘要简介部分这里是文章的摘要简介部分这',
+							year: '2018年',
+							month: '12月28日',
+							link: '/more1.html',
+							img: '/resource/images/news-img1.png'
+						}, {
+							title: '1星空间科技大咖对行业痛点的理性分析要做到那些方星空间',
+							desc: '这里是文章的摘要，简介部分这里是文章的摘要简介部分这里是文章的摘要简介部分这这里是文章的摘要，简介部分这里是文章的摘要简介部分这里是文章的摘要简介部分这',
+							year: '2018年',
+							month: '12月28日',
+							link: '/more1.html',
+							img: '/resource/images/news-img2.png'
+						}, {
+							title: '2星空间科技大咖对行业痛点的理性分析要做到那些方星空间',
+							desc: '这里是文章的摘要，简介部分这里是文章的摘要简介部分这里是文章的摘要简介部分这这里是文章的摘要，简介部分这里是文章的摘要简介部分这里是文章的摘要简介部分这',
+							year: '2018年',
+							month: '12月28日',
+							link: '/more1.html',
+							img: '/resource/images/news-img3.png'
+						}, {
+							title: '3星空间科技大咖对行业痛点的理性分析要做到那些方星空间',
+							desc: '这里是文章的摘要，简介部分这里是文章的摘要简介部分这里是文章的摘要简介部分这这里是文章的摘要，简介部分这里是文章的摘要简介部分这里是文章的摘要简介部分这',
+							year: '2018年',
+							month: '12月28日',
+							link: '/more1.html',
+							img: '/resource/images/news-img2.png'
+						}, {
+							title: '4星空间科技大咖对行业痛点的理性分析要做到那些方星空间',
+							desc: '这里是文章的摘要，简介部分这里是文章的摘要简介部分这里是文章的摘要简介部分这这里是文章的摘要，简介部分这里是文章的摘要简介部分这里是文章的摘要简介部分这',
+							year: '2018年',
+							month: '12月28日',
+							link: '/more1.html',
+							img: '/resource/images/news-img1.png'
+						}
+
+					]
+				},
+			}
+
+
+			function testData(num) {
+				var temp = [];
+				var img1 = '/resource/images/masonry1.png';
+				var img2 = '/resource/images/masonry2.png';
+				var img3 = '/resource/images/masonry3.png';
+				var img4 = '/resource/images/masonry4.png';
+				var imgArr = [img1, img2, img3, img4];
+
+				for (var i = 0; i < num; i++) {
+					temp.push({
+						img: imgArr[Math.round((3 - 0) * Math.random())],
+						title: '123',
+						desc: 'xxxxxxxxxxxxxxxxxx',
+						link: '/more1.html'
+					});
+				}
+
+				return temp;
 			}
 
 		</script>
-		<link href="./resource/css/index.css" rel="stylesheet">
+		<link href="/resource/css/index.css" rel="stylesheet">
 	</head>
 
 	<body>
 		<div id="app"></div>
-		<script src="./resource/js/manifest.chunk.js"></script>
-		<script src="./resource/js/index.chunk.js"></script>
+		<div class="load-mask"> <span class="load-text-wrap"> <span class="load-text-circle"></span><span id="load-text">0%</span></span></div>
+		<script src="/resource/js/manifest.chunk.js"></script>
+		<script src="/resource/js/index.chunk.js"></script>
 	</body>
 
 </html>
