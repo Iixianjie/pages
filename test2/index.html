@@ -13,9 +13,12 @@
         background-color: #fff;
       }
 
-      #container {
+      #container, #container2 {
+        float: left;
         width: 800px;
         height: 800px;
+        margin: 16px;
+        border: 1px solid #eee;
         background-color: transparent !important; /* 地图背景透明 */
       }
 
@@ -27,6 +30,7 @@
 
   <body>
     <div id="container"></div>
+    <div id="container2"></div>
     <script
       type="text/javascript"
       src="https://webapi.amap.com/maps?v=1.4.14&key=2f86791f52fd930b054e74c383cd016f&plugin=Map3D,AMap.DistrictSearch"
@@ -48,6 +52,11 @@
           console.log('childrensChange', arg);
         });
 
+      let areaMap2 = new AreaMap({
+        el: 'container',
+        areaName: '观山湖区',
+        filterAreaRegExp: /^52/,
+      });
         
     </script>
   </body>
