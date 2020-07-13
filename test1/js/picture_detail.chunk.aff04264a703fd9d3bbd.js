@@ -1,1 +1,0 @@
-webpackJsonp([2],{"./src/js/picture_detail.js":function(s,c,i){"use strict";i("./src/main.js")}},["./src/js/picture_detail.js"]);

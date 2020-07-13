@@ -1,1 +1,0 @@
-webpackJsonp([4],{"./src/js/article_list.js":function(s,c,i){"use strict";i("./src/main.js")}},["./src/js/article_list.js"]);

@@ -1,1 +1,0 @@
-webpackJsonp([5],{"./src/js/article_detail.js":function(s,c,i){"use strict";i("./src/main.js")}},["./src/js/article_detail.js"]);

@@ -1,1 +1,0 @@
-webpackJsonp([3],{"./src/js/index.js":function(s,c,n){"use strict";n("./src/main.js")}},["./src/js/index.js"]);
